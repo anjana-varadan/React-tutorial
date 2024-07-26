@@ -1,0 +1,19 @@
+igniting the application
+React makes our app faster, but in reality its not just react but there are other packages/dependacies that help react to make the app faster
+
+npm is a package manager, but its full form is not node package manager. npm is a place where all the packages/ dependencies are hosted. its a standard repository for all the dependencies.
+npm init  (creates a package.json file)
+package.json is a configeration file for the npm
+
+Now we have npm and can install all the dependencies needed. The most imporatant dependency is bundler, which help to optimize and bundle the HTML,JS and CSS file to push to production. Some of the bundlers are web-pack(CRA uses), parcel, wheat.
+
+npm install -D parcel (-D Development dependency) Dependencies are of two type: Development and normal.
+This will create package-lock.json and node_modules
+
+In package.json version can have ^(carot, it will upgrade if minor version change is done) or ~(tilda is update if major version change is done), It is safer to use ^ since minor update wont break the code 
+
+package-lock.json will track the exact version (no ~ and ^), it also have integrity that is sha512 hash. This integrity will take care of working in local not on production. That is local and production will have same code.
+
+The node_modules like a database, all the actual code of dependencies used in the application are in there. 
+Transitive dependency is React has a dependency on parcel, now parcel hace its own package.json and dependencies, now these dependencies have there own package.json and dependencies. (This is the reason why a project can have more than one package.json)
+

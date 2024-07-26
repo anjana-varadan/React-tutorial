@@ -17,3 +17,22 @@ package-lock.json will track the exact version (no ~ and ^), it also have integr
 The node_modules like a database, all the actual code of dependencies used in the application are in there. 
 Transitive dependency is React has a dependency on parcel, now parcel hace its own package.json and dependencies, now these dependencies have there own package.json and dependencies. (This is the reason why a project can have more than one package.json)
 
+npx parcel index.html (index.html is the entry point to the application) this command will ignite the application. The application will be now hosted in localhost:xyz
+
+other way of installing react to the application is by using npm, npm install react and npm install react-dom
+Using CDN is not recommended as when the version changes the CDN link as to be changed in code. Also while using CDN it is creating an HTTP request, we don't want another network call.
+
+Parcel 
+-Parcel will build the app
+-parcel will host the app locally in localhost:xyz
+-Hot Module Replacement(HMR) when we do changes in file and save the browser will automatically refresh, this is because when we save parcel will build the app. The time of the build keep on reducing because parcel is caching .When we install parcel it will take some space called .parcel-cache. When we build for the first time (npm parcel index.html) parcel will cache and from next build it will be faster
+-Parcel will do image optimization
+-If we create a production build it will do bundling(minify and optimize) (npx parcel build index.html)
+-Parcel will also compress the file by removing white space
+-Parcel will do differential bundling: supports in older browsers
+
+To do production build npx parcel build index.html, the build will create dist folder which will have 3 files HTML, JS and CSS. The entire code will be minified, compressed and will be in these 3 files.
+
+BrowsersList is used to make the app compatible to the older versions of browsers. Add that to package.json. This means 100% it will work on those listed browsers, may or maynot work on rest of them. 
+
+

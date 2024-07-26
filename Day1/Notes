@@ -1,0 +1,17 @@
+React is a javascript library. 
+
+When we write JS code the brower have javascript engines which will build and run JS code, But Browser cannot understand react.
+Hence we have to add react into our app, which can be done by CDN links and npm install(explained in day 2)
+
+CDN(Content delivery network) is the place where react is hosted. They have two links one for react and the other react-dom.
+React link will have core react code and the dom one will have the code for dom manipulation. 
+These codes cannot be in the same link because React not only runs in web but also on other platforms and the react-dom will be a link between react and browser.
+
+Crossorigin attribute in cdn link or in general is used to set the mode of the request to an HTTP CORS Request.Web pages often make requests to load resources on other servers. Here is where CORS comes in.
+A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.CORS is used to manage cross-origin requests.
+CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page to be requested from another domain outside their own domain. It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request. CORS allows servers to specify who can access the assets on the server, among many other things.
+
+React.createElement will return object not html element 
+⁠The render method is responsible for converting the JavaScript object to html element which the browser can understand 
+Does the order of links matter? Yes it matters 
+The render method will replace the existing code in the root element

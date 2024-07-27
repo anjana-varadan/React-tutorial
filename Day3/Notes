@@ -1,0 +1,23 @@
+When working on new project and dont know how to start or build the app, then go to package.json and check script.
+
+npm start and npm run build
+
+JSX is a HTML/XML "like" syntax. JSX is different from react and we can write codes in react without JSX. JSX is "NOT" HTML written inside JS file. A JS code is the code which JS engine can understand, JSX code cannot be understood by JS engines. That is why we have our bundler parcel, its not parcel, its babel (another JS package/dependacy) which is a JS complier which parcel manages. 
+JSX code is complied to React.createElement by the babel, The React.createDOM will return a JS object/ react element, This object is understood by the render and render will convert the react element/ JS object into HTML element.
+
+JSX ---babel---> React.creatElement------->React element/ JS odject ----render---> HTML elemet
+
+JSX and HTML are different and they have syntax difference as well like class-->className
+If writing multiple JSX code then put the code in () so that babel will understand where JSX code started and ended.
+Superpower of JSX is that we can write JS code in JSX. {} any JS code can be written inside.
+Babel not only compiles JSX into React.CreateElement, there are other things babel do:
+All brosers cannot understand ES6, babel compiles and convert the code into code that brower understands
+
+Components:
+Components are of two types class component - Very old and not used now a days (Javascript Class) and functional component (JS Function)
+Functional Components FC are JS functions that will return react elements/ JSX
+For babel to understand its a function, FC are PascalCase. 
+Component Composition: Adding/ composing a component into another component
+<FunctionalComponent/> syntax
+
+Suppose we have malicious data coming from API, and if these data are injected and run in browser then the attacker can access out cookies, session, system information etc. These attacks are called XSS (cross site scripting). When we inject a JS into the JSX {}, The JSX will have sure to sanitize and escape.

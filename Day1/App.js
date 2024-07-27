@@ -17,12 +17,14 @@
 // const root = ReactDOM.createRoot(document.getElementById("root")) // create dom root and assign element with id=root as root
 // root.render(element) //render will convert js object to browser understandable html tags
 
-{/* < div id = "parent" >
+{
+  /* < div id = "parent" >
     <div id="child">
         <h1>Hello</h1>
         <h2>Hi</h2>
     </div>
-</div > */}
+</div > */
+}
 
 // const element = React.createElement("div", { id: "parent" },
 //     React.createElement("div", { id: "child" },
@@ -33,7 +35,8 @@
 // const root = ReactDOM.createRoot(document.getElementById("root"))
 // root.render(element)
 
-{/* < div id = "parent" >
+{
+  /* < div id = "parent" >
     <div id="child1">
         <h1>Hello</h1>
         <h2>Hi</h2>
@@ -42,7 +45,8 @@
         <h1>Hello</h1>
         <h2>Hi</h2>
     </div>
-</div >  */}
+</div >  */
+}
 
 // const element = React.createElement("div", { id: "parent" }, [
 //     React.createElement("div", { id: "child1" },
@@ -53,3 +57,7 @@
 
 // const root = ReactDOM.createRoot(document.getElementById("root"))
 // root.render(element) //render will replace what was there in root (do not append)
+
+<div>
+  <h1></h1>
+</div>;

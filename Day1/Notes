@@ -1,7 +1,14 @@
 React is a javascript library. 
 
-When we write JS code the brower have javascript engines which will build and run JS code, But Browser cannot understand react.
-Hence we have to add react into our app, which can be done by CDN links and npm install(explained in day 2)
+Library is a collections of prewritten code snippets that canbe used and reused to perform certain tasks. A particular JavaScript library code can be plugged into application code which leads to faster development and fewer vulnerabilities to have errors. Examples: React, jQuery
+
+Framework provides a basic foundation or structure for a website or an application. Examples: Angular
+
+Frameworks and libraries are code written by third parties to solve regular/common problems or to optimise performance.
+
+A key difference between the two is Inversion of control. When using a library, the control remains with the developer who tells the application when to call library functions. When using a framework, the control is reversed, which means that the framework tells the developer where code needs to be provided and calls it as it requires.
+
+When we write JS code the brower have javascript engines which will build and run JS code, But Browser cannot understand react. Hence we have to add react into our app, which can be done by CDN links and npm install(explained in day 2)
 
 CDN(Content delivery network) is the place where react is hosted. They have two links one for react and the other react-dom.
 React link will have core react code and the dom one will have the code for dom manipulation. 

@@ -5,7 +5,7 @@ npm is a package manager, but its full form is not node package manager. npm is 
 npm init  (creates a package.json file)
 package.json is a configeration file for the npm
 
-Now we have npm and can install all the dependencies needed. The most imporatant dependency is bundler, which help to optimize and bundle the HTML,JS and CSS file to push to production. Some of the bundlers are web-pack(CRA uses), parcel, wheat.
+Now we have npm and can install all the dependencies needed. The most imporatant dependency is bundler, which help to optimize and bundle the HTML,JS and CSS file to push to production. Some of the bundlers are web-pack(CRA uses), parcel, vite.
 
 npm install -D parcel (-D Development dependency) Dependencies are of two type: Development and normal.
 This will create package-lock.json and node_modules

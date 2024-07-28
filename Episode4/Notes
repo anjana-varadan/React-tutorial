@@ -1,0 +1,12 @@
+Plan before building an application, how the UI should look like. Use prototype/ wireframes
+Do low level planning like what are the main components, what are going to be inside these components
+eg: Header, Body, Footer are the main components. Inside header will have logo and links.
+
+Props: Props are the properties that we pass to a component. These are the arguements that we pass to the function. These are JS objects. Used to pass data from parent to child component as props.
+
+Config Driven UI: When website is driven by data. eg: For a food delivery app, Data will be different in different location and its not possible to create different UI for different locations, Config driven UI means when we change data it wont effect UI.
+
+When we use map function or any looping, we have to use keys. There are components at the same level like cards, if keys are not used and when we add a new card, react cannot identify which one is the new card and it will rerender the entire UI. This is effect the performance of the application. If we use keys they act as an id for react to understand which one is the new card and rerender only that DOM element.
+It is not recommented to use index as keys, especially while dealing with dynamic data. 
+
+no keys <<<< index as keys <<<<<<<< id as keys/ any unique value

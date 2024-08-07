@@ -1,0 +1,10 @@
+Never keep hardcoded and string (like URL) data in the component folder create new utils folder and keep it in there.
+Two types of export: 
+1. Default export
+2. Named export: in a single file if we need to export more than one export. while importing use {}
+
+React hooks are JS utility functions gic=ven to us by react, these functions have some logic written inside.
+useState() can create state variable and maintains the state of the component.React will only rerender when the state variable updates.
+
+React uses Reconcilation algorithm also known as React filber. Suppose we have 7 cards and we use filter function and UI changes to 3 cards. Whenever react.createElemnet it will create VIRTUAL DOM, which is a copy/representation of actual DOM.
+now when there is a change the diff algorithm will find the difference btw new VDOM and previous VDOM and then it will actually update the DOM. This will prevent unnecessary DOM manupulation and makes react faster.
